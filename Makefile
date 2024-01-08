@@ -3,6 +3,8 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 format:
+	#format code
+	black *.py UnionMenuSpellingCheck/*.py
 Lint:
 	#pylint
 test:
